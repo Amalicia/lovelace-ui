@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lovelace-ui/precache-manifest.b8cc3ea6c63ed7eeb24546ef2b6f0cd3.js"
+  "/lovelace-ui/precache-manifest.ee9f5c665389f7dc0390633168597adf.js"
 );
 
 self.addEventListener('message', (event) => {
