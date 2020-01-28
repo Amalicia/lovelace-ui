@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/lovelace-ui/static/css/main.d1b05096.chunk.css",
+    "main.js": "/lovelace-ui/static/js/main.16728d8d.chunk.js",
+    "main.js.map": "/lovelace-ui/static/js/main.16728d8d.chunk.js.map",
+    "runtime-main.js": "/lovelace-ui/static/js/runtime-main.84ca4a25.js",
+    "runtime-main.js.map": "/lovelace-ui/static/js/runtime-main.84ca4a25.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/lovelace-ui/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.4c85dfae.chunk.js": "/lovelace-ui/static/js/2.4c85dfae.chunk.js",
+    "static/js/2.4c85dfae.chunk.js.map": "/lovelace-ui/static/js/2.4c85dfae.chunk.js.map",
+    "index.html": "/lovelace-ui/index.html",
+    "precache-manifest.2366536e91edfd9f199f8ddd5c4fc6a6.js": "/lovelace-ui/precache-manifest.2366536e91edfd9f199f8ddd5c4fc6a6.js",
+    "service-worker.js": "/lovelace-ui/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/lovelace-ui/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.d1b05096.chunk.css.map": "/lovelace-ui/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.4c85dfae.chunk.js.LICENSE": "/lovelace-ui/static/js/2.4c85dfae.chunk.js.LICENSE",
+    "static/media/fish.png": "/lovelace-ui/static/media/fish.d62437d4.png",
+    "static/media/logo.svg": "/lovelace-ui/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.84ca4a25.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.4c85dfae.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.16728d8d.chunk.js"
+  ]
+}
