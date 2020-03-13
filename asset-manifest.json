@@ -1,27 +1,24 @@
 {
   "files": {
-    "main.css": "/lovelace-ui/static/css/main.d1b05096.chunk.css",
-    "main.js": "/lovelace-ui/static/js/main.c9b37003.chunk.js",
-    "main.js.map": "/lovelace-ui/static/js/main.c9b37003.chunk.js.map",
+    "main.css": "/lovelace-ui/static/css/main.a937c3ef.chunk.css",
+    "main.js": "/lovelace-ui/static/js/main.ebe26927.chunk.js",
+    "main.js.map": "/lovelace-ui/static/js/main.ebe26927.chunk.js.map",
     "runtime-main.js": "/lovelace-ui/static/js/runtime-main.84ca4a25.js",
     "runtime-main.js.map": "/lovelace-ui/static/js/runtime-main.84ca4a25.js.map",
-    "static/css/2.47e06e2e.chunk.css": "/lovelace-ui/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.3ce21380.chunk.js": "/lovelace-ui/static/js/2.3ce21380.chunk.js",
-    "static/js/2.3ce21380.chunk.js.map": "/lovelace-ui/static/js/2.3ce21380.chunk.js.map",
+    "static/js/2.097e4096.chunk.js": "/lovelace-ui/static/js/2.097e4096.chunk.js",
+    "static/js/2.097e4096.chunk.js.map": "/lovelace-ui/static/js/2.097e4096.chunk.js.map",
     "index.html": "/lovelace-ui/index.html",
-    "precache-manifest.ee9f5c665389f7dc0390633168597adf.js": "/lovelace-ui/precache-manifest.ee9f5c665389f7dc0390633168597adf.js",
+    "precache-manifest.7832e2949af0c96506afed5954767927.js": "/lovelace-ui/precache-manifest.7832e2949af0c96506afed5954767927.js",
     "service-worker.js": "/lovelace-ui/service-worker.js",
-    "static/css/2.47e06e2e.chunk.css.map": "/lovelace-ui/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.d1b05096.chunk.css.map": "/lovelace-ui/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.3ce21380.chunk.js.LICENSE": "/lovelace-ui/static/js/2.3ce21380.chunk.js.LICENSE",
+    "static/css/main.a937c3ef.chunk.css.map": "/lovelace-ui/static/css/main.a937c3ef.chunk.css.map",
+    "static/js/2.097e4096.chunk.js.LICENSE": "/lovelace-ui/static/js/2.097e4096.chunk.js.LICENSE",
     "static/media/cow_logo.png": "/lovelace-ui/static/media/cow_logo.76162ea5.png",
-    "static/media/fish2.png": "/lovelace-ui/static/media/fish2.58653b43.png"
+    "static/media/fish.png": "/lovelace-ui/static/media/fish.58653b43.png"
   },
   "entrypoints": [
     "static/js/runtime-main.84ca4a25.js",
-    "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.3ce21380.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.c9b37003.chunk.js"
+    "static/js/2.097e4096.chunk.js",
+    "static/css/main.a937c3ef.chunk.css",
+    "static/js/main.ebe26927.chunk.js"
   ]
 }
