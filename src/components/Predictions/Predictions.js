@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import './Prediction.css';
 
 class Prediction extends React.Component {
@@ -11,7 +10,7 @@ class Prediction extends React.Component {
         }
 
         this.handleChange = this.handleChange.bind(this)
-        this.handleButtonClick = this.handleButtonClick.bind(this)
+        this.handleFormSubmit = this.handleFormSubmit.bind(this)
     }
 
     handleChange(event) {
@@ -20,26 +19,21 @@ class Prediction extends React.Component {
         })
     }
 
-    async handleButtonClick() {
-        console.log('on click')
-        if (this.state.file == null)
-            return;
+    async handleFormSubmit(event) {
+        event.preventDefault();
 
-        let data = new FormData
+        const data = new FormData()
+        data.append('file', this.uploadInput.files[0])
 
-        console.log(this.state.file)
-
-        // data.append("image", this.state.file, this.state.file.filename)
-
-        const config = {
-            headers: { 'content-type': 'multipart/form-data'}
-        }
-
-        console.log('sending request')
-        const response = await axios.post('http://0.0.0.0:5000/predict', JSON.stringify(this.state.file), config)
-
-        this.setState({
-            pred: response.data()
+        fetch('http://0.0.0.0:5000/predict', {
+            method: 'POST',
+            body: data,
+        }).then((response) => {
+            response.json().then((body) => {
+                this.setState({
+                    pred: body.prediction
+                })
+            })
         })
     }
 
@@ -47,12 +41,15 @@ class Prediction extends React.Component {
         return (
             <div className="Prediction">
                 <div className="Pred-body">
-                    <input className="Image-in" type="file" id="file-select" onChange={this.handleChange}/>
-                    <label for="file-select" className="Image-lbl">Choose an Image</label>
-                    <button className="Pred-btn" onClick={async () => this.handleButtonClick()}>Predict</button>
+                    <form onSubmit={this.handleFormSubmit}>
+                        <input ref={(ref) => { this.uploadInput = ref; }} className="Image-in" type="file" id="file-select" onChange={this.handleChange}/>
+                        <label for="file-select" className="Image-lbl">Choose an Image</label>
+                        <button className="Pred-btn">Predict</button>
+                    </form>
                     <div className="Pred-zone">
                         <img className="Img-disp" src={this.state.file}/>
-                        <h1 className="Pred-text">Predictions: <span>{this.state.pred}</span></h1>
+                        <h1 className="Pred-text">Predictions:</h1>
+                        <p className="Pred-val" style={{color: this.state.pred === ["none"] ? "#cf1e25" : "#7CFC00"}}>{this.state.pred}</p>
                     </div>
                 </div>
             </div>
