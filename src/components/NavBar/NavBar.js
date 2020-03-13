@@ -1,11 +1,11 @@
 import React from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import cow from './cow_logo.png';
 
 const NavBar = () => (
     <div className="Nav">
-      <Navbar bg="dark" variant="dark" fixed="top">
+      <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="#home">
           <img
             alt=""

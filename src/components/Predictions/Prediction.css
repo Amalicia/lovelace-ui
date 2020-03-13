@@ -1,0 +1,77 @@
+.Prediction {
+    padding-top: 1vh;
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+  }
+
+.Pred-body {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #1d2025;
+    display: inline;
+    min-width: 90vw;
+    min-height: 90vh;
+    color: white;
+    border-radius: 25px;
+  }
+
+.Image-in {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1;
+}
+
+.Image-in + label {
+    padding: 10px;
+    color:white;
+    border-color: white;
+    margin-left: 2vw;
+    background-color: #282c34;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid white
+}
+
+.Pred-btn {
+    float: right;
+    padding: 10px;
+    margin-right: 2vw;
+    color:white;
+    background-color: #282c34;
+    border-radius: 10px;
+}
+
+.Pred-zone {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Img-disp {
+    max-width: 100%;
+    height: auto;
+    padding-top: 2vh;
+    padding-left: 1vw;
+    border-radius: 25px;
+}
+
+.Pred-text {
+    padding-left: 1vw;
+    padding-top: 2vh;
+}
+
+.Pred-val {
+    padding-top: 2vh;
+    padding-left: 1vw;
+}
+
+.Pred-val {
+    padding-top: 2vh;
+    padding-left: 2vw;
+    font-size: 20px;
+}
