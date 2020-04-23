@@ -13,22 +13,27 @@ class Prediction extends React.Component {
         this.handleFormSubmit = this.handleFormSubmit.bind(this)
     }
 
+    // display user selected image
     handleChange(event) {
         this.setState({
             file: URL.createObjectURL(event.target.files[0])
         })
     }
 
+    // Post request to Lovelace-Service
     async handleFormSubmit(event) {
+        // prevent users from submitting without an image
         event.preventDefault();
 
         const data = new FormData()
         data.append('file', this.uploadInput.files[0])
 
-        fetch('http://0.0.0.0:5000/predict', {
+        // post request
+        fetch('http://127.0.0.1:8080/predict', {
             method: 'POST',
             body: data,
         }).then((response) => {
+            // update webpage with the response from the service
             response.json().then((body) => {
                 this.setState({
                     pred: body.prediction
